@@ -17,26 +17,27 @@
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="prime.css" />
   </head>
-  <!-- TODO Add Text-Shadow to some parts of the text of DOM -->
-  <!-- TODO Change Header background and use video for the background -->
-   <!--TODO Add iframe video and replace cpu image in purchase section -->
+   <!-- TODO Make section heights balanced -->
+  <!-- TODO Add Navigation links and name -->
    <!-- TODO Make any final adujustments -->
   <body>
     <!-- NOTE Navigation -->
     <nav class="bg-dark sticky-top px-3">
-      <div class="navbar justify-content-center justify-content-md-start">
+      <div class="navbar justify-content-center justify-content-md-start text-light">
         <img class="img-fluid knight-logo" src="images/primeKnight.png" alt="Knight Logo" />
+        <p>Knightware</p>
       </div>
     </nav>
     <!-- NOTE Header -->
-    <header>
+    <header class="position-relative">
+      <video class="position-absolute circuit" src="images/Circuit.mp4" autoplay loop playsinline muted></video>
       <!-- SECTION Header Content -->
       <section class="container py-4">
         <div class="row">
           <div class="col-12 col-md-5">
             <!-- NOTE Form -->
             <form class="bg-dark text-light p-3 border border-2 border-light">
-              <p>Sign up for great deals!</p>
+              <p class="text-center">Sign up for great deals!</p>
               <input class="form-control mb-3" placeholder="Name" />
               <input class="form-control mb-3" placeholder="Email" />
               <div class="input-group mb-3">
@@ -54,8 +55,8 @@
             </form>
           </div>
           <!-- NOTE Greeting Message -->
-          <div class="col-md-7 greet-message align-self-center">
-            <div class="border-start border-2 border-info text-light ps-3">
+          <div class="col-md-7 greet-message align-self-start">
+            <div class="border-start border-2 border-info text-light ps-3 w-75">
               <h5>Lorem ipsum dolor sit.</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis facilis eius at quam doloremque aperiam amet sapiente deleniti. Autem, illo quas?</p>
             </div>
@@ -96,11 +97,8 @@
         <div class="container">
           <div class="row">
             <!-- CPU Image -->
-            <div class="col-12 col-md-5 p-5">
-              <img
-                class="img-fluid"
-                src="https://images.unsplash.com/photo-1591799265444-d66432b91588?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3B1fGVufDB8fDB8fHww"
-                alt="CPU" />
+            <div class="col-12 col-md-5 p-4">
+              <iframe class="w-100 h-100" src="https://www.youtube-nocookie.com/embed/kR9AJnNkOiI?si=Nc3U2KKTMfev91f8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <!-- Purchase Part -->
             <div class="col-12 col-md-7 align-self-center text-light">

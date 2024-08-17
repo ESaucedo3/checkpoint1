@@ -7,6 +7,21 @@ header {
   background-image: url(images/test1.jpg);
   background-size: cover;
   background-position: center;
+
+  & .circuit {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  & .greet-message {
+    background: rgb(2,0,36);
+    background: linear-gradient(99deg, rgba(2,0,36,1) 0%, rgba(56,9,121,1) 27%, rgba(0,212,255,1) 87%);
+    padding: 1rem;
+    border: 1px solid gold;
+    text-shadow: 1px 1px 2px #98edf3;
+  }
 }
 
 main {
