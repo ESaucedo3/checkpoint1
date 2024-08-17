@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Checkpoint 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="prime.css" />
+  </head>
+  <!-- TODO Add Text-Shadow to some parts of the text of DOM -->
+  <!-- TODO Change Header background and use video for the background -->
+   <!--TODO Add iframe video and replace cpu image in purchase section -->
+   <!-- TODO Make any final adujustments -->
+  <body>
+    <!-- NOTE Navigation -->
+    <nav class="bg-dark sticky-top px-3">
+      <div class="navbar justify-content-center justify-content-md-start">
+        <img class="img-fluid knight-logo" src="images/primeKnight.png" alt="Knight Logo" />
+      </div>
+    </nav>
+    <!-- NOTE Header -->
+    <header>
+      <!-- SECTION Header Content -->
+      <section class="container py-4">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <!-- NOTE Form -->
+            <form class="bg-dark text-light p-3 border border-2 border-light">
+              <p>Sign up for great deals!</p>
+              <input class="form-control mb-3" placeholder="Name" />
+              <input class="form-control mb-3" placeholder="Email" />
+              <div class="input-group mb-3">
+                <input class="form-control" placeholder="Phone" />
+                <input class="form-control ms-2" placeholder="Ext." />
+              </div>
+              <textarea class="form-control mb-3" rows="9" placeholder="Message"></textarea>
+              <div class="mb-3 d-flex">
+                <input id="check" class="me-2" type="checkbox" />
+                <label for="check">checking this box you agree to the terms of services</label>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary rounded-pill">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- NOTE Greeting Message -->
+          <div class="col-md-7 greet-message align-self-center">
+            <div class="border-start border-2 border-info text-light ps-3">
+              <h5>Lorem ipsum dolor sit.</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis facilis eius at quam doloremque aperiam amet sapiente deleniti. Autem, illo quas?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- SECTION About Us -->
+      <section class="py-3">
+        <div class="container">
+          <div class="row">
+            <!-- About Part -->
+            <div class="col-12 col-md-5 order-1 order-md-0 pt-3 text-light">
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae in, nesciunt nulla doloremque, corporis repellat reprehenderit, quasi ducimus suscipit at culpa non
+                repudiandae earum rerum vel voluptatibus asperiores nihil! Et
+              </p>
+            </div>
+            <!-- Key Points -->
+            <div class="col-12 col-md-7 position-relative d-flex justify-content-center order-0 order-md-1">
+              <div class="keypoints bg-dark w-75 text-light d-flex flex-column justify-content-around p-4 border border-2 border-light">
+                <p><i class="fa-solid fa-computer fa-lg me-2" style="color: #28c8b4"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="fa-solid fa-shield fa-lg me-2" style="color: #03b5c9"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="fa-solid fa-server fa-lg me-2" style="color: #5131a6"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="fa-solid fa-microchip fa-lg me-2" style="color: #6587c5"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="fa-solid fa-hard-drive fa-lg me-2" style="color: #1faee4"></i>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION Purchase Part -->
+      <section class="py-3">
+        <div class="container">
+          <div class="row">
+            <!-- CPU Image -->
+            <div class="col-12 col-md-5 p-5">
+              <img
+                class="img-fluid"
+                src="https://images.unsplash.com/photo-1591799265444-d66432b91588?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3B1fGVufDB8fDB8fHww"
+                alt="CPU" />
+            </div>
+            <!-- Purchase Part -->
+            <div class="col-12 col-md-7 align-self-center text-light">
+              <div class="d-flex justify-content-center">
+                <img class="cpu pt-3" src="images/cpu.png" alt="CPU">
+              </div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro vitae, vero eos dolore adipisci veritatis facere officia inventore laudantium maiores sunt, nisi laboriosam
+                  error placeat aperiam tempore repellat asperiores maxime.
+                </p>
+                <div class="d-flex justify-content-center justify-content-md-end">
+                  <button type="button" class="btn btn-dark rounded-pill px-4 mb-3">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION Reviews -->
+       <section class="bg-dark">
+        <div class="container">
+          <div class="row align-items-center p-5 gy-3">
+            <!-- Actual Reviews part -->
+            <div class="col-12 col-md-4 order-1 order-md-0">
+              <div class="bg-light p-5 border border-3 border-warning">
+                <p>❝ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum libero nisi dolor.</p>
+                <p class="text-center">Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 order-0 order-md-1">
+              <div class="bg-light p-5 border border-3 border-warning">
+                <div class="d-flex justify-content-center">
+                  <img class="stars" src="images/star.png" alt="Star 1">
+                  <img class="stars" src="images/star.png" alt="Star 2">
+                  <img class="stars" src="images/star.png" alt="Star 3">
+                </div>
+                <p>❝ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, inventore qui, aut illo magni consequatur quia saepe hic doloribus, fugit laudantium.</p>
+                <p class="text-center">Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 order-3">
+              <div class="bg-light p-5 border border-3 border-warning">
+                <p>❝ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum libero nisi dolor.</p>
+                <p class="text-center">Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img class="pc-parts w-100" src="images/location.PNG" alt="PC Parts">
+        </div>
+       </section>
+    </main>
+
+    <footer class="bg-dark p-4 text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-flex flex-column">
+              <p>Visit Us.<br>31290 Starboard St<br>Boise ID, 83123</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>contact<br>(113) 391-291<br>Mon - Fri / 9:00AM - 5:00PM</p>
+          </div>
+          <div class="col-md-4">
+            <p>Socials</p>
+            <div class="d-flex">
+              <i class="fa-brands fa-github fa-2xl me-2" style="color: #2264de;"></i>
+              <i class="fa-brands fa-instagram fa-2xl me-2" style="color: #58bed3;"></i>
+              <i class="fa-brands fa-snapchat fa-2xl me-2" style="color: #FFD43B;"></i>
+              <i class="fa-brands fa-twitter fa-2xl" style="color: #98aed8;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
