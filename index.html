@@ -15,34 +15,44 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="prime.css" />
   </head>
-   <!-- TODO Make section heights balanced -->
-  <!-- TODO Add Navigation links and name -->
-   <!-- TODO Make any final adujustments -->
+  
   <body>
-    <!-- NOTE Navigation -->
-    <nav class="bg-dark sticky-top px-3">
-      <div class="navbar justify-content-center justify-content-md-start text-light">
-        <img class="img-fluid knight-logo" src="images/primeKnight.png" alt="Knight Logo" />
-        <p>Knightware</p>
+    <!-- ANCHOR Navigation -->
+    <nav class="bg-dark sticky-top border-bottom border-1 border-info px-5">
+      <div class="navbar justify-content-center justify-content-md-between">
+        <div>
+          <img class="img-fluid knight-logo" src="images/primeKnight.png" alt="Knight Logo">
+          <a class="d-none d-md-inline text-light ms-3" href="#">Knightware</a>
+        </div>
+        
+        <div class="text-light d-none d-md-inline">
+          <a href="#">Home</a>
+          <a class="mx-2" href="#about">About</a>
+          <a href="#">Products</a>
+        </div>
       </div>
     </nav>
-    <!-- NOTE Header -->
+
+    <!-- ANCHOR Header -->
     <header class="position-relative">
       <video class="position-absolute circuit" src="images/Circuit.mp4" autoplay loop playsinline muted></video>
       <!-- SECTION Header Content -->
       <section class="container py-4">
         <div class="row">
-          <div class="col-12 col-md-5">
+          <div class="col-md-5">
             <!-- NOTE Form -->
-            <form class="bg-dark text-light p-3 border border-2 border-light">
+            <form class="bg-dark border border-2 border-light text-light p-3">
               <p class="text-center">Sign up for great deals!</p>
-              <input class="form-control mb-3" placeholder="Name" />
-              <input class="form-control mb-3" placeholder="Email" />
+              <input class="form-control mb-3" placeholder="Name">
+              <input class="form-control mb-3" placeholder="Email">
               <div class="input-group mb-3">
-                <input class="form-control" placeholder="Phone" />
-                <input class="form-control ms-2" placeholder="Ext." />
+                <input class="form-control" placeholder="Phone">
+                <input class="form-control ms-2" placeholder="Ext.">
               </div>
               <textarea class="form-control mb-3" rows="9" placeholder="Message"></textarea>
               <div class="mb-3 d-flex">
@@ -50,13 +60,13 @@
                 <label for="check">checking this box you agree to the terms of services</label>
               </div>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary rounded-pill">Submit</button>
+                <button type="button" class="btn btn-outline-light rounded-pill">Submit</button>
               </div>
             </form>
           </div>
           <!-- NOTE Greeting Message -->
-          <div class="col-md-7 greet-message align-self-start">
-            <div class="border-start border-2 border-info text-light ps-3 w-75">
+          <div class="greet-message col-md-7 d-none d-md-block align-self-start text-light">
+            <div class="border-start border-2 border-info ps-3 w-75">
               <h5>Lorem ipsum dolor sit.</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis facilis eius at quam doloremque aperiam amet sapiente deleniti. Autem, illo quas?</p>
             </div>
@@ -65,22 +75,23 @@
       </section>
     </header>
 
+    <!-- ANCHOR Main -->
     <main>
-      <!-- SECTION About Us -->
-      <section class="py-3">
+      <!-- SECTION Informational -->
+      <section id="about" class="bg-dark py-4">
         <div class="container">
           <div class="row">
-            <!-- About Part -->
-            <div class="col-12 col-md-5 order-1 order-md-0 pt-3 text-light">
+            <!-- NOTE Informational Part -->
+            <div class="col-md-5 order-1 order-md-0 pt-3 text-light">
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae in, nesciunt nulla doloremque, corporis repellat reprehenderit, quasi ducimus suscipit at culpa non
                 repudiandae earum rerum vel voluptatibus asperiores nihil! Et
               </p>
             </div>
-            <!-- Key Points -->
-            <div class="col-12 col-md-7 position-relative d-flex justify-content-center order-0 order-md-1">
-              <div class="keypoints bg-dark w-75 text-light d-flex flex-column justify-content-around p-4 border border-2 border-light">
+            <!-- NOTE Key Points -->
+            <div class="col-md-7 position-relative d-flex justify-content-center order-0 order-md-1">
+              <div class="keypoints bg-dark w-75 d-flex flex-column border border-2 border-light text-light p-4">
                 <p><i class="fa-solid fa-computer fa-lg me-2" style="color: #28c8b4"></i>Lorem ipsum dolor sit amet consectetur.</p>
                 <p><i class="fa-solid fa-shield fa-lg me-2" style="color: #03b5c9"></i>Lorem ipsum dolor sit amet consectetur.</p>
                 <p><i class="fa-solid fa-server fa-lg me-2" style="color: #5131a6"></i>Lorem ipsum dolor sit amet consectetur.</p>
@@ -92,44 +103,44 @@
         </div>
       </section>
 
-      <!-- SECTION Purchase Part -->
-      <section class="py-3">
+      <!-- SECTION More Information & Purchase -->
+      <section class="py-5">
         <div class="container">
           <div class="row">
-            <!-- CPU Image -->
-            <div class="col-12 col-md-5 p-4">
+            <!-- NOTE Vid -->
+            <div class="col-md-5 vid">
               <iframe class="w-100 h-100" src="https://www.youtube-nocookie.com/embed/kR9AJnNkOiI?si=Nc3U2KKTMfev91f8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <!-- Purchase Part -->
-            <div class="col-12 col-md-7 align-self-center text-light">
+            <!-- NOTE Purchase Part -->
+            <div class="col-md-7 align-self-center text-light">
               <div class="d-flex justify-content-center">
-                <img class="cpu pt-3" src="images/cpu.png" alt="CPU">
+                <img class="cpu pt-3 img-fluid" src="images/cpu.png" alt="CPU">
               </div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro vitae, vero eos dolore adipisci veritatis facere officia inventore laudantium maiores sunt, nisi laboriosam
-                  error placeat aperiam tempore repellat asperiores maxime.
-                </p>
-                <div class="d-flex justify-content-center justify-content-md-end">
-                  <button type="button" class="btn btn-dark rounded-pill px-4 mb-3">Buy Now</button>
-                </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro vitae, vero eos dolore adipisci veritatis facere officia inventore laudantium maiores sunt, nisi laboriosam
+                error placeat aperiam tempore repellat asperiores maxime.
+              </p>
+              <div class="d-flex justify-content-center justify-content-md-end">
+                <button type="button" class="btn btn-dark rounded-pill px-4 mb-3">Buy Now</button>
+              </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SECTION Reviews -->
+      <!-- SECTION Reviews & Location -->
        <section class="bg-dark">
         <div class="container">
           <div class="row align-items-center p-5 gy-3">
-            <!-- Actual Reviews part -->
-            <div class="col-12 col-md-4 order-1 order-md-0">
+            <!-- NOTE Reviews Part -->
+            <div class="col-md-4 order-1 order-md-0">
               <div class="bg-light p-5 border border-3 border-warning">
                 <p>❝ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum libero nisi dolor.</p>
-                <p class="text-center">Lorem ipsum dolor sit.</p>
+                <p class="text-center">- Lorem ipsum dolor sit.</p>
               </div>
             </div>
-            <div class="col-12 col-md-4 order-0 order-md-1">
+            <div class="col-md-4 order-0 order-md-1">
               <div class="bg-light p-5 border border-3 border-warning">
                 <div class="d-flex justify-content-center">
                   <img class="stars" src="images/star.png" alt="Star 1">
@@ -137,31 +148,32 @@
                   <img class="stars" src="images/star.png" alt="Star 3">
                 </div>
                 <p>❝ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, inventore qui, aut illo magni consequatur quia saepe hic doloribus, fugit laudantium.</p>
-                <p class="text-center">Lorem ipsum dolor sit.</p>
+                <p class="text-center">- Lorem ipsum dolor sit.</p>
               </div>
             </div>
-            <div class="col-12 col-md-4 order-3">
+            <div class="col-md-4 order-3">
               <div class="bg-light p-5 border border-3 border-warning">
                 <p>❝ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum libero nisi dolor.</p>
-                <p class="text-center">Lorem ipsum dolor sit.</p>
+                <p class="text-center">- Lorem ipsum dolor sit.</p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- NOTE Location Part -->
         <div>
-          <img class="pc-parts w-100" src="images/location.PNG" alt="PC Parts">
+          <img class="pc-parts w-100" src="images/location.PNG" alt="Boise Location">
         </div>
        </section>
     </main>
 
+    <!-- ANCHOR Footer -->
     <footer class="bg-dark p-4 text-light">
       <div class="container">
         <div class="row">
+          <!-- NOTE Contact Information -->
           <div class="col-md-4">
-            <div class="d-flex flex-column">
               <p>Visit Us.<br>31290 Starboard St<br>Boise ID, 83123</p>
-            </div>
           </div>
           <div class="col-md-4">
             <p>contact<br>(113) 391-291<br>Mon - Fri / 9:00AM - 5:00PM</p>

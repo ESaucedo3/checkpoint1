@@ -1,42 +1,48 @@
-.knight-logo {
-  width: 4.9rem;
-  height: 4.9rem;
+body {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
-header {
-  background-image: url(images/test1.jpg);
-  background-size: cover;
-  background-position: center;
+nav {
+  & a {
+    text-decoration: none;
+    color: inherit;   
+    font-size: 1.2rem;
+    transition: all .4s ease;
 
-  & .circuit {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+    &:hover {
+      color: lightblue;
+    }
   }
 
-  & .greet-message {
-    background: rgb(2,0,36);
-    background: linear-gradient(99deg, rgba(2,0,36,1) 0%, rgba(56,9,121,1) 27%, rgba(0,212,255,1) 87%);
-    padding: 1rem;
-    border: 1px solid gold;
-    text-shadow: 1px 1px 2px #98edf3;
+  & .knight-logo {
+    height: 4.9rem;
   }
 }
 
 main {
-  & section:first-child {
-    background-color: #333;
-  }
-
   & section:nth-child(2) {
     background: rgb(2,0,36);
     background: linear-gradient(130deg, rgba(2,0,36,1) 0%, rgba(143,100,198,1) 35%, rgba(0,212,255,1) 100%); 
   }
 }
 
+.circuit {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.greet-message {
+  background: rgb(2,0,36);
+  background: linear-gradient(99deg, rgba(2,0,36,1) 0%, rgba(56,9,121,1) 27%, rgba(0,212,255,1) 87%);
+  padding: 1rem;
+  border: 1px solid gold;
+  text-shadow: 1px 1px 2px #98edf3;
+}
+
 .cpu {
-  width: 14.9rem;
   height: 14.9rem;
 }
 
@@ -47,6 +53,7 @@ main {
   &:nth-child(2) {
     position: relative;
     bottom: 19px;
+    animation: uniqueStar 3s linear infinite;
   }
 }
 
@@ -59,15 +66,24 @@ textarea {
   resize: none;
 }
 
-@media (width <= 768px) {
-  .greet-message {
-    display: none;
-  }
-}
-
 @media (width >= 768px) {
   .keypoints {
     position: absolute;
     top: 3rem;
+  }
+}
+
+@media (width < 768px) {
+  .vid {
+    height: 21rem;
+  }
+}
+
+@keyframes uniqueStar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
